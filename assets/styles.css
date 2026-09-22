@@ -2,12 +2,9 @@
            Navigation
 *********************************/
 .navbar {
-    max-width: 100%;
-    min-width: 100%;
-    text-align: center;
     position: sticky;
-    top: auto;
-    display: flex
+    top: 0;
+    display: flex;
 }
 
 .navbar a:link, .navbar a:visited {
