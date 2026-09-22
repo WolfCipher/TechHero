@@ -3,6 +3,7 @@
 *********************************/
 :root{
   --pale-green: rgb(151, 194, 151);
+  --pale-blue: rgb(170, 211, 255);
 }
 
 body {
@@ -95,9 +96,10 @@ h1 {
   background-color: green;
   border: 0.25rem solid darkgreen;
   border-radius: 0.5rem;
+  color: white
 }
 
-.carousel-track iframe {
+.carousel-track iframe, .carousel-track .item {
   width: 320px;
   height: 180px;
   margin-right: 0.5rem;
@@ -108,4 +110,16 @@ h1 {
 
 .carousel-track iframe:last-child {
   margin-right: 0rem;
+}
+
+.carousel-track a {
+  color: var(--pale-blue)
+}
+
+.item {
+  text-align: center;
+}
+
+.item h2 {
+  margin-top: 1px;
 }
