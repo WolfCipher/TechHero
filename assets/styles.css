@@ -1,0 +1,26 @@
+/********************************
+           Navigation
+*********************************/
+.navbar {
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
+    position: sticky;
+    top: auto;
+}
+
+.navbar a:link, .navbar a:visited {
+  background-color: green;
+  color: white;
+  border: 2px solid green;
+  padding: 10px 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover, .navbar a:active {
+  background-color: darkgreen;
+  border-color: darkgreen;
+  color: white;
+} 
