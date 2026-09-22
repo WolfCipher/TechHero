@@ -27,3 +27,54 @@
   border-color: darkgreen;
   color: white;
 } 
+
+.person {
+  width: 40%;
+  height: 40%;
+  float: left;
+  border-radius: 50%;
+  /* Adds a green double-style appearance using shadows */
+  box-shadow: 0 0 0 0.15rem darkgreen, 
+              0 0 0 0.30rem green, 
+              0 0 0 0.45rem darkgreen,
+              0 0 0.5rem 0.8rem rgb(186, 190, 186); 
+  box-sizing: border-box;
+  margin: 0% 3% 1%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.carousel-track {
+  overflow-x: auto;
+  display: flex;
+  padding: 0.5rem 0.5rem 1.0rem;
+  margin: 0.5rem 0rem 2.0rem;
+  background-color: green;
+  border: 0.25rem solid darkgreen;
+  border-radius: 0.5rem;
+}
+
+.carousel-track iframe {
+  width: 320px;
+  height: 180px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.carousel-track iframe:last-child {
+  margin-right: 0rem;
+}
