@@ -36,6 +36,9 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Enter folder with index.html
+        run: cd docs
+
       - name: Install dependencies
         run: npm install || true
 
