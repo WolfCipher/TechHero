@@ -23,6 +23,7 @@ jobs:
     # permissions
     permissions:
       id-token: write   # Required for OIDC token issuance
+      pages: write      # Required for a GitHub deployment
       contents: read    # Keep this if you need checkout
 
     # Steps represent a sequence of tasks that will be executed as part of the job
