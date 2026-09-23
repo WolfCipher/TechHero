@@ -46,6 +46,10 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      # ensure GitHub pages can access assets
+      - name: Copy assets into docs
+        run: cp -r ./assets ./docs/assets
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
