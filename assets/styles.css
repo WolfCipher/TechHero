@@ -42,6 +42,7 @@ h1 {
     display: flex;
     padding: 4px;
     background-color: var(--pale-green);
+    z-index: 1;
 }
 
 .navbar a:link, .navbar a:visited {
