@@ -72,7 +72,14 @@ h1 {
               0 0 0 0.45rem darkgreen,
               0 0 0.5rem 0.8rem rgb(186, 190, 186); 
   box-sizing: border-box;
-  margin: 0% 3% 1%;
+  margin: 1% 3% 1%;
+}
+
+.carousel .person {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: 0%;
 }
 
 /********************************
@@ -99,6 +106,12 @@ h1 {
   color: white
 }
 
+.carousel-track a {
+  color: var(--pale-blue)
+}
+
+/* Used in Tech Hero */
+
 .carousel-track iframe, .carousel-track .item {
   width: 320px;
   height: 180px;
@@ -112,8 +125,27 @@ h1 {
   margin-right: 0rem;
 }
 
-.carousel-track a {
-  color: var(--pale-blue)
+/* Used in About Me */
+
+.carousel-person {
+  overflow: hidden;
+  background-color: green;
+  border: 0.25rem solid darkgreen;
+  border-radius: 0.5rem;
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-person .carousel-track {
+  margin: 0rem;
+  border: none;
+}
+
+.carousel-track .item:first-child {
+  margin-left: 15rem;
 }
 
 .item {
