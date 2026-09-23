@@ -15,9 +15,10 @@ body {
 
 .content{
   /* Make up for the margin lost in the body */
-  padding: 10px;
+  padding: 20px;
 
   background-color: white;
+
 }
 
 h1 {
@@ -166,4 +167,22 @@ h1 {
 
 .item h2 {
   margin-top: 1px;
+}
+
+/* Use in Fact Cards */
+.card-row {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--pale-blue);
+  color: darkgreen;
+
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem;
+
+  border: 0.25rem solid lightskyblue;
+  border-radius: 10rem;
 }
