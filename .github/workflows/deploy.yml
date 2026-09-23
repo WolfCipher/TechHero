@@ -36,9 +36,6 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Enter folder with index.html
-        run: cd docs
-
       - name: Install dependencies
         run: npm install || true
 
@@ -51,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist  # change to your build output folder
+          path: ./docs  # change to your build output folder
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
