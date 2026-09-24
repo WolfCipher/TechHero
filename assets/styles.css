@@ -23,6 +23,7 @@ body {
 
 h1 {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .floater-text {
@@ -140,6 +141,12 @@ h1 {
   color: var(--pale-blue)
 }
 
+/* Used in Splash Page */
+
+.bigImage {
+  width: 64%;
+}
+
 /* Used in Tech Hero */
 
 .carousel-track iframe, .carousel-track .item {
@@ -189,6 +196,11 @@ h1 {
 }
 
 /* Long Text */
+.essay {
+  margin: 0;
+  padding: 0;
+}
+
 .essay p {
   white-space: pre-line;
 }
