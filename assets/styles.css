@@ -143,7 +143,11 @@ h1 {
 
 /* Used in Splash Page */
 
-.bigImage {
+.text-center {
+  text-align: center;
+}
+
+.big-image {
   width: 64%;
 }
 

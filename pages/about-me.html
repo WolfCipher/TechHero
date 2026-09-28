@@ -18,20 +18,31 @@
     <!-- This is a navbar, which enables users to switch to different pages. The navbar class controls the styling. For example, each navbar link appears side-by-side. The class also makes the navbar sticky, so that it stays with the user as they scroll. It makes the navbar have a higher z-index than other items, so it will appear above them. It also gives the navbar a green background. -->
 
     <div class="content">
+    <!-- This content class creates the white page backdrop and padding to differentiate text from the light green background. -->
       <!-- General Introduction -->
       <h1>About Us</h1>
       <div class="essay">
+      <!-- The essay class decreases the amount of spacing between paragraphs, so the ideas will feel more related. It also ensures whitespace newlines will be properly interpreted. However, this fact is irrelevant to this section. -->
         <p>Hello! We are the Howardsmith twins, Peyton and Riley. We're 4th-year seniors hailing from Middleton, Wisconsin.</p>
         <p>How can you tell us apart, you ask? Great question! Riley has both a shorter name and shorter hair.</p>
       </div>
       <!-- Riley -->
       <div class="person-card">
+      <!-- The person-card class puts in some vertical margin to separate items. -->
         <div class="carousel carousel-person">
+        <!-- The carousel class helps control child elements. -->
+        <!-- The carousel-person class controls styling, like background color, border color, border radius, and alignment. -->
           <!-- Riley Image -->
           <img class="person" src="../assets/riley.jpg" alt="Riley Howardsmith">
           <h2 class="floater-text">Riley</h2>
+          <!-- The float-text class creates floating text. This is intended for putting a person's name over their image in light-blue font. -->
           <!-- Riley Info -->
           <div class="carousel-track">
+          <!-- The carousel-track class creates the background and the horizontal scrollability of the carousel. -->
+          <!-- The carousel-track class also controls child elements. It keeps track of margins and stylings. For example, the first child will need an additional margin while the last child will need less margin to make the spacing seem equal throughout. -->
+          <!-- Item descendants of the carousel-track class are provided with margins to space them out. Thus, elements with the item class have that class in order to receive that specific styling. -->
+          <!-- Additionally, the item class makes text center-aligned. -->
+          <!-- For <a> descendants of the carousel-track class, the text color is light-blue. -->
             <!-- Major -->
             <div class="item">
               <h2>Major</h2>
@@ -95,12 +106,20 @@
       </div>
       <!-- Peyton -->
       <div class="person-card">
+        <!-- The person-card class puts in some vertical margin to separate items. -->
         <div class="carousel carousel-person">
+        <!-- The carousel class helps control child elements. -->
+        <!-- The carousel-person class controls styling, like background color, border color, border radius, and alignment. -->
           <!-- Peyton Image -->
           <img class="person" src="../assets/peyton.jpg" alt="Peyton Howardsmith">
           <h2 class="floater-text">Peyton</h2>
+          <!-- The float-text class creates floating text. This is intended for putting a person's name over their image in light-blue font. -->
           <!-- Peyton Info -->
           <div class="carousel-track">
+          <!-- The carousel-track class creates the background and the horizontal scrollability of the carousel. -->
+          <!-- The carousel-track class also controls child elements. It keeps track of margins and stylings. For example, the first child will need an additional margin while the last child will need less margin to make the spacing seem equal throughout. -->
+          <!-- Item descendants of the carousel-track class are provided with margins to space them out. Thus, elements with the item class have that class in order to receive that specific styling. -->
+          <!-- For <a> descendants of the carousel-track class, the text color is light-blue. -->
             <!-- Major -->
             <div class="item">
               <h2>Major</h2>
@@ -164,15 +183,20 @@
       <!-- Twin Facts and Systemic Discrimination -->
       <h2>Fun Facts About (Identical) Twins</h2>
       <div class="essay">
+      <!-- The essay class decreases the amount of spacing between paragraphs, so the ideas will feel more related. It also ensures whitespace newlines will be properly interpreted. However, this fact is irrelevant to this section. -->
         <div class="card-row">
+        <!-- The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
           <h2>Biology</h2>
           <div>
+          <!-- This div puts both cards in the same "column," so they line up horizontally. -->
             <div class="card">
+            <!-- The card class styles the div to have a blue background with a rounded border. -->
               How likely a couple is to have fraternal twins depends on the mother's DNA.
               Hyper-ovulating women are more likely to conceive fraternal twins.
               The cause of identical twins is still unknown!
             </div>
             <div class="card">
+            <!-- The card class styles the div to have a blue background with a rounded border. -->
               Identical twins can have different allergies!
               This boils down to gene expression. 
               Even with the same DNA, epigenetic factors (e.g. the environment) can affect your traits / gene expression. 
@@ -183,11 +207,13 @@
         </div>
         <p>On a different note, this course got us to ponder ways twins may be included/excluded by the system.</p>
         <div class="card-row">
+        <!-- The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
           <h2>
             LIS500
           </h2>
           <div>
             <div class="card">
+            <!-- The card class styles the div to have a blue background with a rounded border. -->
               Lost Applications
               <ul>
                 <li>
@@ -199,6 +225,7 @@
               </ul>
             </div>
             <div class="card">
+            <!-- The card class styles the div to have a blue background with a rounded border. -->
               Birthdate Conflicts
               <ul>
                 <li>
@@ -222,6 +249,7 @@
               </ul>
             </div>
             <div class="card">
+            <!-- The card class styles the div to have a blue background with a rounded border. -->
               Unanswerable Survey Questions
               <li>
                 Ever feel that survey questions aren't made expecting someone with your experience?

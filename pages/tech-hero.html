@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- This is the Tech Hero page. -->
+<!-- Note: Links that lead the user beyond our website use target="_blank" to allow the user to navigate to another page without losing the tab to our website.  -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -18,6 +19,7 @@
     <!-- This is a navbar, which enables users to switch to different pages. The navbar class controls the styling. For example, each navbar link appears side-by-side. The class also makes the navbar sticky, so that it stays with the user as they scroll. It makes the navbar have a higher z-index than other items, so it will appear above them. It also gives the navbar a green background. -->
 
     <div class="content">
+    <!-- This content class creates the white page backdrop and padding to differentiate text from the light green background. -->  
       <!-- Image of Hero -->
       <img class="person" src="../assets/techhero.webp" alt="Catt Small">
       <!-- The person class is intended for images of a person. It makes the image circular, adds a border, creates a drop-shadow, and makes the image float left. -->
@@ -41,9 +43,11 @@
       </div>
       <!-- Tech Hero Videos -->
       <div class="carousel">
-      <!-- The carousel class creates the background and the horizontal scrollability of the carousel. -->
+      <!-- The carousel class helps control child elements. -->
         <div class="carousel-track">
-        <!-- The carousel-track class was created to control child elements. It keeps track of margins and stylings. For example, the first child will need an additional margin while the last child will need less margin to make the spacing seem equal throughout. For iframe children, the borders are rounded slightly. -->
+        <!-- The carousel-track class creates the background and the horizontal scrollability of the carousel. -->
+        <!-- The carousel-track class also controls child elements. It keeps track of margins and stylings. For example, the first child will need an additional margin while the last child will need less margin to make the spacing seem equal throughout. -->
+        <!-- For iframe descendants of the carousel-track class, the borders are rounded slightly. -->
           <iframe src="https://www.youtube.com/embed/6eHIHrM8TF4" allowfullscreen></iframe>
           <iframe src="https://www.youtube.com/embed/0mT9GF0iX7M" allowfullscreen></iframe>
           <iframe src="https://www.youtube.com/embed/WGZ38oeoBtU" allowfullscreen></iframe>

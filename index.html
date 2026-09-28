@@ -18,14 +18,17 @@
     <!-- This is a navbar, which enables users to switch to different pages. The navbar class controls the styling. For example, each navbar link appears side-by-side. The class also makes the navbar sticky, so that it stays with the user as they scroll. It makes the navbar have a higher z-index than other items, so it will appear above them. It also gives the navbar a green background. -->
 
     <div class="content">
-      <!-- Place in column for center-alignment -->
+    <!-- This content class creates the white page backdrop and padding to differentiate text from the light green background. -->
       <div class="col">
+      <!-- This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
         <h1>Welcome!</h1>
-        <p>
+        <p class="text-center">
+        <!-- The text-center class makes text center-aligned. -->
           Explore to learn more about your fellow LIS500 students, the inspirational Catt Small, and implicit bias.
         </p>
         <!-- GIF(s) to welcome people -->
-        <img src="assets/heart.gif" alt="GIF of two people forming a heart." class="bigImage">
+        <img src="assets/heart.gif" alt="GIF of two people forming a heart." class="big-image">
+        <!-- The class big-image ensures the size of the image is proportional to the width of the screen. This makes the image responsive to different screen sizes. This size is considered "big" because the image's width will be over half the width of the screen. -->
       </div>
     </div>
   </body>
