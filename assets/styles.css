@@ -41,6 +41,17 @@ h3 {
   font-size: 3rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
+
+  /* PH: text outline */
+  text-shadow: 0 0 0 darkgreen,
+               0 0.1rem 0 darkgreen,
+               0 -0.1rem 0 darkgreen,
+              0.1rem 0 0 darkgreen,
+               0.1rem 0.1rem 0 darkgreen,
+               0.1rem -0.1rem 0 darkgreen,
+               -0.1rem 0 0 darkgreen,
+               -0.1rem 0.1rem 0 darkgreen,
+              -0.1rem -0.1rem 0 darkgreen;
 }
 
 /* PH: Change scrollbar for browsers that do not use webkit */
