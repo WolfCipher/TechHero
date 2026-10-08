@@ -16,7 +16,7 @@ body {
 
 .content{
   /* RH: Make up for the margin lost in the body */
-  padding: 20px;
+  padding: 40px;
 
   background-color: white;
 
@@ -125,7 +125,8 @@ h3 {
 .person {
   /* PH: Makes image relative to parent size */
   width: 40%;
-  height: 40%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   /* PH: Makes image float left, allowing other elements to wrap around it */
   float: left;
   /* PH: Makes image circular */
