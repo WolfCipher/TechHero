@@ -326,6 +326,13 @@ h3 {
   gap: 1rem;
 }
 
+.card-grid{
+  /* RH: Display as a grid with 2 elements per row; each element in a row is sized equally. */
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
 .card {
   background-color: var(--pale-blue);
   color: darkgreen;
