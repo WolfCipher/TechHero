@@ -327,9 +327,13 @@ h3 {
 }
 
 .card-grid{
-  /* RH: Display as a grid with 2 elements per row; each element in a row is sized equally. */
+  /*
+  RH: Display as a grid with a variable number elements per row
+  Each element in a row is sized equally.
+  The number of elements in a row depends on the screen size.
+  */
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
 }
 
@@ -339,8 +343,7 @@ h3 {
 
   /* RH: keeps content away from rounded edges */
   padding: 3rem;
-  /* RH: allow card to change size relative to the screen, but get no bigger than 500px */
-  max-width: 500px;
+
   /* RH: spaces each card away from other elements*/
   margin: 1rem;
 
