@@ -5,6 +5,7 @@
   /* RH: Create some variables to use later, so the color theme can be easily changed at any time. */
   --pale-green: rgb(151, 194, 151);
   --pale-blue: rgb(170, 211, 255);
+  --paler-blue:rgb(202, 228, 255);
 }
 
 body {
@@ -40,6 +41,17 @@ h3 {
   font-size: 3rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
+
+  /* PH: text outline */
+  text-shadow: 0 0 0 darkgreen,
+               0 0.1rem 0 darkgreen,
+               0 -0.1rem 0 darkgreen,
+              0.1rem 0 0 darkgreen,
+               0.1rem 0.1rem 0 darkgreen,
+               0.1rem -0.1rem 0 darkgreen,
+               -0.1rem 0 0 darkgreen,
+               -0.1rem 0.1rem 0 darkgreen,
+              -0.1rem -0.1rem 0 darkgreen;
 }
 
 /* PH: Change scrollbar for browsers that do not use webkit */
@@ -187,9 +199,12 @@ h3 {
   color: white
 }
 
-/* RH: links in carousel tracks have blue text */
+/* RH: links in carousel tracks have blue text with extra darkgreen background for better contrast and creating tag-like shapes */
 .carousel-track a {
-  color: var(--pale-blue)
+  color: var(--paler-blue);
+  background-color: darkgreen;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
 }
 
 /* Used in Splash Page */
