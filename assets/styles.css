@@ -65,7 +65,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 1rem;
-  font-size: clamp(2rem, 5vw + 1rem, 5rem); /* PH: font-size is responsive to screen size */
+  font-size: clamp(1.5rem, 5vw + 1rem, 5rem); /* PH: font-size is responsive to screen size */
   width: 100%; /* PH: width fills parent */
   background-color: lightskyblue;
   border-radius: 1rem;
@@ -83,19 +83,19 @@ h2 {
 h3 {
   font-family: "Abril Fatface", serif;
   margin: 0;
-  font-size: clamp(1.25rem, 3vw + 0.6rem, 3rem); /* PH: font-size is responsive to screen size */
+  font-size: clamp(1.5rem, 3vw + 0.6rem, 3rem); /* PH: font-size is responsive to screen size */
 }
 
 h4 {
   font-family: "Abril Fatface", serif;
   margin: 0;
-  font-size: clamp(1rem, 2vw + 0.6rem, 2.5rem); /* PH: font-size is responsive to screen size */
+  font-size: clamp(1.25rem, 2vw + 0.6rem, 2.5rem); /* PH: font-size is responsive to screen size */
 }
 
 p, a, li, div, button {
   font-family: "Afacad", sans-serif;
   margin: 0;
-  font-size: clamp(0.75rem, 1.5vw + 0.5rem, 2rem); /* PH: font-size is responsive to screen size */
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem); /* PH: font-size is responsive to screen size */
 }
 
 .floater-text {
