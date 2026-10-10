@@ -23,6 +23,7 @@ body {
   gap: 3rem;
 
   background-color: white;
+  min-height: 100dvh; /* height must at least fill the viewport dynamically */
 
 }
 
@@ -39,7 +40,13 @@ h1 {
   font-family: "FontdinerSwanky", sans-serif;
   text-align: center;
   margin: 0;
-  font-size: clamp(3rem, 5vw + 1rem, 5rem) /* font-size is responsive to screen size */
+  padding: 1rem;
+  font-size: clamp(3rem, 5vw + 1rem, 5rem); /* font-size is responsive to screen size */
+  width: 100%; /* width fills parent */
+  background-color: lightskyblue;
+  border-radius: 1rem;
+  /* PH: The total width and height should include content, padding, and borders. Added in the case that an element will use this class while having padding and borders. */
+  box-sizing: border-box;
 }
 
 h2 {
@@ -150,7 +157,10 @@ hr {
   text-align: center;
   text-decoration: none; /* RH: remove the underline commonly used for links */
 
-  display: inline-block; /* RH: lets elements sit side-by-side AND have personalized width/height */
+  /* RH: lets link text be centered vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* RH: navbar links when hovered over or being clicked  */
