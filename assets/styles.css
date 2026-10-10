@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 
   background-color: white;
-  min-height: 100dvh; /* height must at least fill the viewport dynamically */
+  min-height: 100dvh; /* PH: height must at least fill the viewport dynamically */
 
 }
 
@@ -42,13 +42,31 @@ body {
   src: url('./FontdinerSwanky-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Afacad";
+  src: url("./Afacad/static/Afacad-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("./Afacad/static/Afacad-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("./AbrilFatface-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 h1 {
   font-family: "FontdinerSwanky", sans-serif;
   text-align: center;
   margin: 0;
   padding: 1rem;
-  font-size: clamp(2.5rem, 5vw + 1rem, 5rem); /* font-size is responsive to screen size */
-  width: 100%; /* width fills parent */
+  font-size: clamp(2.5rem, 5vw + 1rem, 5rem); /* PH: font-size is responsive to screen size */
+  width: 100%; /* PH: width fills parent */
   background-color: lightskyblue;
   border-radius: 1rem;
   /* PH: The total width and height should include content, padding, and borders. Added in the case that an element will use this class while having padding and borders. */
@@ -56,24 +74,28 @@ h1 {
 }
 
 h2 {
+  font-family: "Abril Fatface", serif;
   margin: 0;
   text-align: center;
-  font-size: clamp(1.75rem, 3vw + 0.8rem, 4rem); /* font-size is responsive to screen size */
+  font-size: clamp(1.75rem, 3vw + 0.8rem, 4rem); /* PH: font-size is responsive to screen size */
 }
 
 h3 {
+  font-family: "Abril Fatface", serif;
   margin: 0;
-  font-size: clamp(1.5rem, 3vw + 0.6rem, 3rem); /* font-size is responsive to screen size */
+  font-size: clamp(1.5rem, 3vw + 0.6rem, 3rem); /* PH: font-size is responsive to screen size */
 }
 
 h4 {
+  font-family: "Abril Fatface", serif;
   margin: 0;
-  font-size: clamp(1.25rem, 2vw + 0.6rem, 2.5rem); /* font-size is responsive to screen size */
+  font-size: clamp(1.25rem, 2vw + 0.6rem, 2.5rem); /* PH: font-size is responsive to screen size */
 }
 
-p, a, li, div {
+p, a, li, div, button {
+  font-family: "Afacad", sans-serif;
   margin: 0;
-  font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem); /* font-size is responsive to screen size */
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem); /* PH: font-size is responsive to screen size */
 }
 
 .floater-text {
@@ -125,14 +147,26 @@ p, a, li, div {
   background: var(--pale-blue);
 }
 
-/* Change horizontal line to be blue */
+/* PH: Change horizontal line to be blue */
 hr {
   background: lightskyblue;
-  border-color: var(--pale-green);
+  border-color: green;
   border-style: solid;
   border-radius: 10px;
   border-width: 0.3rem;
   height: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background: lightskyblue;
+  border-color: green;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0.3rem;
+  padding: 1rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
 }
 
 /********************************
@@ -213,7 +247,7 @@ hr {
   margin: 3% 10%;
 }
 
-/* Stops anything that follows from wrapping around floating elements */
+/* PH: Stops anything that follows from wrapping around floating elements */
 .clearfix {
   clear: both;
 }
@@ -368,11 +402,11 @@ hr {
 .item h3 {
   /* RH: decreases the top margin for item elements */
   margin-top: 1px;
-  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2rem); /* font-size is responsive to screen size */
+  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2rem); /* PH: font-size is responsive to screen size */
 }
 
 .item p, .item a, .card, .card li {
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem); /* font-size is responsive to screen size */
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem); /* PH: font-size is responsive to screen size */
 }
 
 .card li {
@@ -433,7 +467,7 @@ hr {
   align-items: center;
 }
 
-/* Changes for larger screens */
+/* PH: Changes for larger screens */
 @media (min-width: 768px) {
   .big-image {
     width: 64%; 

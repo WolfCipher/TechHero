@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body>
+    <audio id="bg-music" loop>
+        <source src="./assets/The Long Night.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <!-- RH: Navbar Section -->
     <div class="navbar">
       <a href="index.html" class="current">Home</a>
@@ -34,7 +39,12 @@
         <!-- PH: GIF(s) to welcome people -->
         <img src="assets/heart.gif" alt="GIF of two people forming a heart." class="big-image">
         <!-- PH: The class big-image ensures the size of the image is proportional to the width of the screen. This makes the image responsive to different screen sizes. This size is considered "big" because the image's width will be over half the width of the screen. -->
+        <div class="separate-content"></div>
+        <!-- PH: Play/Pause Control Button -->
+        <button id="music-toggle" onclick="toggleMusic()">Play Music</button>
+        <p id="music-info"></p>
       </div>
     </div>
+    <script src="./scripts/toggleMusic.js"></script>
   </body>
 </html>
