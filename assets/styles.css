@@ -67,7 +67,7 @@ p, a, li, div {
 
 .floater-text {
   position: absolute; /* RH: Removes element from normal flow to position itself relative to its nearest ancestor with position: relative or absolute or fixed (or otherwise relative to the viewport) */
-  top: 1rem; /* RH: Move downwards relative to ancestor */
+  top: 3.5rem; /* RH: Move downwards relative to ancestor */
   z-index: 2; /* RH: Float above most elements, such as a floating image */
 
   color: var(--pale-blue);
@@ -253,7 +253,6 @@ hr {
 /* RH: links in carousel tracks have blue text with extra darkgreen background for better contrast and creating tag-like shapes */
 .carousel-track a {
   color: var(--paler-blue);
-  background-color: darkgreen;
   padding: 0.4rem 1rem;
   border-radius: 1rem;
 }
@@ -281,7 +280,6 @@ hr {
 
 .carousel-track iframe, .carousel-track .item {
   width: 320px;
-  height: 180px;
 
   /* PH: space track elements by adding margin to their right */
   margin-right: 0.5rem;
@@ -299,6 +297,11 @@ hr {
 }
 
 /* Used in About Me */
+.carousel-track .item {
+  padding: 0 1rem;
+  background-color: darkgreen;
+}
+
 .person-card {
   margin: 60px 0px;
 }
@@ -343,9 +346,9 @@ hr {
   position: relative;
   /* RH: Visually move the element to the right, without truly changing its position
      Note: this is the same amount as the img-wrap to ensure proper positioning */
-  left: 8rem;
+  left: 10rem;
   /* RH: Counter-act the shift to the right with the same amount of margin, so the carousel-track will not appear to overflow horizontally */
-  margin-right: 8rem;
+  margin-right: 10rem;
 }
 
 /* RH: the first child is shifted over to the right to make up for the image covering the initial section of the carousel */
