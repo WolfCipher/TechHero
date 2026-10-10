@@ -180,7 +180,7 @@ button {
   /* RH: Lets navbar display elements side-by-side */
   display: flex;
   /* RH: Keeps text away from edges */
-  padding: 4px;
+  padding: clamp(1px, 0.5vw, 4px);
   /* RH: Makes navbar match the color scheme */
   background-color: var(--pale-green);
   /* RH: Puts navbar in front of everything else */
@@ -195,7 +195,7 @@ button {
   border: 2px solid green;
   border-radius: 10px;
 
-  padding: 10px 20px;
+  padding: 10px clamp(1px, 1vw, 4px);
   margin: 2px;
   width: 100%; /* RH: fill the flex box */
 
@@ -292,7 +292,7 @@ button {
   background-color: green;
   border: 0.25rem solid darkgreen;
   border-radius: 0.5rem;
-  color: white
+  color: white;
 }
 
 /* RH: links in carousel tracks have blue text with extra darkgreen background for better contrast and creating tag-like shapes */
@@ -459,7 +459,7 @@ button {
   border: 0.25rem solid lightskyblue;
   border-radius: 10rem;
 
-  max-width: clamp(10rem, 10vw, 100rem);
+  max-width: clamp(8rem, 10vw, 100rem);
 
   display: flex;
   flex-direction: column;
@@ -479,5 +479,30 @@ button {
 
   .card {
     max-width: none;
+  }
+}
+
+/* PH/RH: Changes for smaller screens (Mobile view: stack image above the track) */
+@media (max-width: 767px) {
+  .carousel-person {
+    flex-direction: column; /* Stack image/wrap and carousel track vertically */
+    border-radius: 0.5rem;  /* Reset the pill-like border radius on mobile */
+    align-items: stretch;
+  }
+
+  .carousel-person .img-wrap {
+    left: 0;                /* Remove desktop horizontal offset */
+    margin: 1.5rem auto 0.5rem auto; /* Center the image container */
+  }
+
+  .carousel-person .carousel-track {
+    left: 0;                /* Remove desktop offset */
+    margin-top: 10rem;       /* Pushes the carousel track further down below the image */
+    margin-right: 0rem;     /* Remove negative offset margin */
+    border-radius: 0.5rem;
+  }
+
+  .carousel-track .item:first-child {
+    margin-left: 0.5rem;    /* Reset first child extra margin on mobile */
   }
 }
