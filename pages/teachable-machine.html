@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- This is the Home page. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hero</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <!-- RH: Navbar Section -->
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about-me.html">About Us</a>
+      <a href="resource-page.html" class="current">Resource Page</a>
+      <!-- PH: The current class gives special styling to indicate this is the current page. -->
+      <a href="tech-hero.html">Tech Heroes</a>
+    </div>
+    <!-- RH: This is a navbar, which enables users to switch to different pages. The navbar class controls the styling. For example, each navbar link appears side-by-side. The class also makes the navbar sticky, so that it stays with the user as they scroll. It makes the navbar have a higher z-index than other items, so it will appear above them. It also gives the navbar a green background. -->
+
+    <div class="content">
+    <!-- RH: This content class creates the white page backdrop and padding to differentiate text from the light green background. -->
+        <div>Teachable Machine Image Model</div>
+        <button id="start-button" type="button">Start</button>
+        <p id="status" role="status" aria-live="polite"></p>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="../scripts/teachableMachine.js"></script>
+  </body>
+</html>
