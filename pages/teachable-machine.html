@@ -25,10 +25,11 @@
         <div class="col">
         <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
             <p>We trained a model to differentiate pens and pencils using Google's Teachable Machine. Check it out for yourself!</p>
+             
             <p class="aside-text">Please note that the model more easily identifies the objects when there is no human visible to the camera.</p>
         </div> 
         <button id="start-button" type="button">Start</button>
-        <div id="model-machine" class="card-row">
+        <div id="model-machine" class="card-row" hidden>
         <!-- RH: The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
             <div id="webcam-container"></div>
             <div class="col fill-width">
@@ -40,6 +41,49 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+
+        <div>
+            <h2>Algorithm At Work</h2>
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Project Statement</h2>
+            <div class="essay">
+            <!-- PH: The essay class decreases the amount of spacing between paragraphs, so the ideas will feel more related. -->
+                <p>
+                    When choosing which kind of things we wanted to differentiate through machine learning, we thought carefully about the power of data, as discussed in Joy Buolamwini's <em>Unmasking AI</em>. For one thing, Buolamwini has shown ways in which our facial data can be used against us. This made us reconsider some of our ideas. For example, we were wondering whether we could train a machine to differentiate us, labeling one category "Peyton" and the other "Riley". Although it would be fun to see a machine be able to differentiate identical twins, we decided to heed Buolamwini's warning and look for a different idea.
+                </p>
+                <p>
+                    Another big takeaway from <em>Unmasking AI</em> is how easily data can create biased models. When considering what project to build, we really wanted to create a dataset without introducing bias. As there is only so much two college students can do, we realized that there would inevitably be projects where it would be hard to avoid bias. For example, we had discussed using machine learning to differentiate the different letters of the American Sign Language (ASL) alphabet. However, (as both of us are lighter skinned) we were aware that we would need people with darker skin to volunteer in order for the model to accurately interpret the ASL alphabet from a wide variety of people. As this would require going up to people and convincing them to trust us (total strangers) with their sensitive biometric data, we decided projects involving people in general would probably not be feasible if our goal was to build an unbiased model.
+                </p>
+                <p>
+                    Thus, we decided we should compare items that are readily available. If those items came in various shapes and sizes, all varieties would also need to be readily available to avoid a situation similar to Buolamwini's where she could not be detected while other people could be. Hence, we ended up wanting to compare pens and pencils. Our combined collection of pens and pencils formed a wide range of samples. There were different colors and different shapes. Some were more weathered and worn out than others, while others were newer or longer.
+                </p>
+                <p>
+                    As we collected our samples, we hit a snag. Unlike with pens, there are different items with "pencil" in the name that some people would not consider a real pencil. For example, there are mechanical pencils. There have been times where teachers ask students to bring pencils to class but will tell a student to bring a "real pencil" if they bring a mechanical pencil. These teachers would argue that mechanical pencils should not be included in the sample as a pencil. Additionally, in most areas outside of art, using a colored pencil to complete work will raise a few eyebrows. Others will likely ask you to bring a "real pencil" in to do the work instead. Thus, we hit a very real question of what should be considered a pencil.
+                </p>
+                <p>
+                    Any answer that we would come up with is bound to have bias, as there is no true consensus — at least, if we are going off of the debates between teachers and students. This was a wake-up call. Although we had set off to only build a model we could feasibly create without bias, we inevitably had to introduce some bias into the system. As the cracks started to show, we wondered whether there were other types of pens and pencils not represented by our sample, simply because we were not aware of them. This just goes to show that anything touched by a human will inevitably have some bias — all we can do is try our best to reduce it to a minimum.
+                </p>
+                <p>
+                    This realization also came with another reminder from Unmasking AI: bias is not just introduced by what we include and do not include in the data, but it is also introduced by the labels chosen for each item included in the data. At this point, we had the power to choose whether mechanical pencils and colored pencils were given the label "pencil" or not. Our choice could never appeal to everyone. In the end, we decided that anything with "pencil" in their name would be considered a pencil. Although we were aware that not all languages would likely use pencil in the name for all of these variants, we decided that a model trained using English words was more likely to be used by English speakers. Additionally, we believed that being exclusive would likely break more functionality than being inclusive, as there can always be future models that differentiate the different pencil subgroups. Even now, we can imagine the contention from this simple, relatively inconsequential choice — and it reminds us of the magnitude of power that AI companies wield by making the extremely impactful choices revolving around people.
+                </p>
+                <p>
+                    Before we took images for our samples, we discussed where we should take the pictures. We knew the backgrounds should be similar so that the model does not confuse the background as being vital for the definition of a pen versus a pencil. Additionally, we remembered Buolamwini mentioning the importance of the environments where images are taken. Her book described how models that worked on images taken in picture studios with perfect lighting did not work well on images taken in the average environment. Thus, we also took the images in more than one environment, to increase the likelihood of the model working in other environments. In a similar vein, we also took images of our objects at different angles and distances from the object, as well as changing the objects' orientation. We also took a few images with more than one pen or more than one pencil (but no images with both types together), in case the model assumes only one should be there.
+                </p>
+                <p>
+                    Furthermore, we wanted to mimic a typical environment where pens and pencils would occur — specifically, the state of being held and poised to write with. Unfortunately, we ran back into some of our earlier worries of not being able to represent hands of different skin tones. In the end, we prioritized showing the objects on their own, but we included some images of hands holding the objects, too. In order to ensure the model did not believe lighter and bare-skinned hands were required for a pen or a pencil to be held, we also wore black gloves. Naturally, this solution is not perfect, but it is better than nothing. Furthermore, we also ensured that some images were held by the left hand and others were held by the right hand, with both taking turns having gloves and no gloves. We did this to ensure that the model would recognize light-handed people and right-handed people equally.
+                </p>
+                <p>
+                    In short, this experience has taught us that bias is inevitable and not so easy to avoid, even when looking out for it. That is why it is crucial to specifically focus on mitigating bias, instead of simply assuming everything will work out. If we were to continue this project, we would take images in a wider range of environments. Currently, the images are mostly lit artificially, and although writing utensils are mostly used indoors, it is important to consider cases when they are not. Additionally, we would get a larger and more diverse group of creators so that biases caused by cultural, lingual, ethnic, racial, sex, and other differences would be minimized.
+                </p>
+            </div>
+        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>

@@ -517,6 +517,10 @@ button:disabled {
   display: none;
 }
 
+#model-machine[hidden] {
+  display: none;
+}
+
 #model-machine {
   border: 0.25rem solid green;
   border-radius: 1rem;

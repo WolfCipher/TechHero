@@ -18,18 +18,21 @@ async function init() {
     // get elements
     const startButton = document.getElementById("start-button");
     const status = document.getElementById("status");
+    const modelMachine = document.getElementById("model-machine");
     startButton.disabled = true;
 
     // check camera is accessible
     if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia) {
         status.textContent =
             "Camera access requires the HTTPS site or a localhost server. Open the deployed site or run this project through localhost.";
+        modelMachine.hidden = false;
         startButton.disabled = false;
         return;
     }
 
     // give user update
     status.textContent = "Loading the model...";
+    modelMachine.hidden = false;
 
     // if possible, use the camera
     try {
