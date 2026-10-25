@@ -287,6 +287,11 @@ button:disabled {
   display: flex;
 }
 
+/* PH: fill horizontal space */
+.fill-width {
+  width: 100%;
+}
+
 .carousel-track {
   /* PH: allow elements to overflow horizontally and be accessible with a scrollbar */
   overflow-x: auto;
@@ -412,7 +417,7 @@ button:disabled {
   font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2rem); /* PH: font-size is responsive to screen size */
 }
 
-.item p, .item a, .card, .card li {
+.item p, .item a, .card, .card li, #label-container div, .aside-text {
   font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem); /* PH: font-size is responsive to screen size */
 }
 
@@ -440,6 +445,17 @@ button:disabled {
   align-items: center;
   /* RH: add space between children, so the heading is separated horizontally from the cards */
   gap: 1rem;
+}
+
+#webcam-container {
+  flex: 0 1 50%;
+  max-width: 40%;
+}
+
+#webcam-container video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card-grid{
@@ -472,6 +488,40 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Used in Teachable Machine */
+.info-card {
+  background-color: var(--paler-blue);
+  color: darkgreen;
+
+  /* RH: keeps content away from rounded edges */
+  padding: 3rem;
+
+  /* RH: spaces each card away from other elements*/
+  margin: 1rem;
+
+  border: 0.25rem solid darkgreen;
+  border-radius: 1rem;
+
+  max-width: clamp(8rem, 10vw, 100rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ensure the container does not display when marked as hidden */
+#results-container[hidden] {
+  display: none;
+}
+
+#model-machine {
+  border: 0.25rem solid green;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--pale-blue);
 }
 
 /* PH: Changes for larger screens */

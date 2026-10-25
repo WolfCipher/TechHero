@@ -12,20 +12,34 @@
     <div class="navbar">
       <a href="../index.html">Home</a>
       <a href="about-me.html">About Us</a>
-      <a href="resource-page.html" class="current">Resource Page</a>
+      <a href="resource-page.html">Resource Page</a>
       <!-- PH: The current class gives special styling to indicate this is the current page. -->
       <a href="tech-hero.html">Tech Heroes</a>
+      <a href="teachable-machine.html" class="current">Teachable Machine</a>
     </div>
     <!-- RH: This is a navbar, which enables users to switch to different pages. The navbar class controls the styling. For example, each navbar link appears side-by-side. The class also makes the navbar sticky, so that it stays with the user as they scroll. It makes the navbar have a higher z-index than other items, so it will appear above them. It also gives the navbar a green background. -->
 
     <div class="content">
     <!-- RH: This content class creates the white page backdrop and padding to differentiate text from the light green background. -->
-        <div>Teachable Machine Image Model</div>
+        <h1>Teachable Machine Image Model</h1>
+        <div class="col">
+        <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
+            <p>We trained a model to differentiate pens and pencils using Google's Teachable Machine. Check it out for yourself!</p>
+            <p class="aside-text">Please note that the model more easily identifies the objects when there is no human visible to the camera.</p>
+        </div> 
         <button id="start-button" type="button">Start</button>
-        <p id="status" role="status" aria-live="polite"></p>
-        <div id="webcam-container" hidden></div>
-        <div id="predicted-label"></div>
-        <div id="label-container"></div>
+        <div id="model-machine" class="card-row">
+        <!-- RH: The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
+            <div id="webcam-container"></div>
+            <div class="col fill-width">
+            <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
+                <p id="status" role="status" aria-live="polite"></p>
+                <div id="results-container" class="info-card" hidden>
+                    <h2 id="predicted-label"></h2>
+                    <div id="label-container"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>

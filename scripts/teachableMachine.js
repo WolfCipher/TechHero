@@ -70,6 +70,7 @@ async function init() {
 
         await withTimeout(cameraVideo.play(), 5000, "Camera playback timed out.");
         isRunning = true;
+        document.getElementById("results-container").hidden = false;
         startButton.textContent = "Pause";
         startButton.disabled = false;
         status.textContent = "Camera started.";
@@ -124,6 +125,7 @@ function stopCamera() {
 
     document.getElementById("webcam-container").replaceChildren();
     document.getElementById("webcam-container").hidden = true;
+    document.getElementById("results-container").hidden = true;
     document.getElementById("label-container").replaceChildren();
     document.getElementById("predicted-label").textContent = "";
 }
