@@ -23,11 +23,12 @@
         <div>Teachable Machine Image Model</div>
         <button id="start-button" type="button">Start</button>
         <p id="status" role="status" aria-live="polite"></p>
-        <div id="webcam-container"></div>
+        <div id="webcam-container" hidden></div>
+        <div id="predicted-label"></div>
         <div id="label-container"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <script src="../scripts/teachableMachine.js"></script>
+    <script src="../scripts/teachableMachine.js?v=3"></script>
   </body>
 </html>

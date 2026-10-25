@@ -171,6 +171,11 @@ button {
   cursor: pointer; /* Show button is clickable */
 }
 
+button:disabled {
+  background: var(--pale-blue);
+  border-color: var(--pale-green);
+}
+
 /********************************
            Navigation
 *********************************/
