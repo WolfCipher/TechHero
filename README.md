@@ -12,3 +12,4 @@ See the Teachable Machine model and data here: https://github.com/WolfCipher/Pen
 3. an About Me page
 4. a resource page for implicit bias
 5. a tech hero page
+6. a teachable machine model page
