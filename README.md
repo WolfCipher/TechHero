@@ -3,6 +3,7 @@
 This project was developed for LIS500 at UW-Madison in Fall 2026.
 
 See the project here: https://wolfcipher.github.io/TechHero/
+
 See the Teachable Machine model and data here: https://github.com/WolfCipher/Pen-Pencil-Model-Data
 
 ## Key Elements
