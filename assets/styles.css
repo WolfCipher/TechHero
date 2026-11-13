@@ -512,6 +512,16 @@ button:disabled {
   align-items: center;
 }
 
+.demo {
+  min-width: 50%;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 0 0 0.15rem darkgreen, 
+              0 0 0 0.30rem green, 
+              0 0 0 0.45rem darkgreen,
+              0 0 0.5rem 0.8rem rgb(186, 190, 186);
+  box-sizing: border-box;
+}
+
 /* ensure the container does not display when marked as hidden */
 #results-container[hidden] {
   display: none;
