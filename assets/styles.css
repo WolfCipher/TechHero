@@ -184,6 +184,8 @@ button:disabled {
   border-radius: 1em;
   box-shadow: 0 0.5em 1em var(--pale-blue);
 
+  text-align: center; /* If the text falls on 2+ lines, ensure the following lines stay centered */
+
   /* Keep items organized as they were when previously only surrounded by the content class */
   display: flex;
   flex-direction: column;
