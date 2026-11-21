@@ -176,6 +176,19 @@ button:disabled {
   border-color: var(--pale-green);
 }
 
+/* A card with a green background, rounded-corners, and blue shadow */
+.content-card {
+  margin: 20px, 0px;
+  padding: 1em;
+  background-color: var(--pale-green);
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em var(--pale-blue);
+
+  /* Keep items organized as they were when previously only surrounded by the content class */
+  display: flex;
+  flex-direction: column;
+}
+
 /********************************
            Navigation
 *********************************/

@@ -23,26 +23,28 @@
     <div class="content">
     <!-- RH: This content class creates the white page backdrop and padding to differentiate text from the light green background. -->
         <h1>Teachable Machine Image Model</h1>
-        <div class="col">
-        <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
-            <p>We trained a model to differentiate pens and pencils using Google's Teachable Machine. Check it out for yourself!</p>
-             
-            <p class="aside-text">Please note that the model more easily identifies the objects when there is no human visible to the camera and when the background is plain.</p>
-        </div> 
-        <button id="start-button" type="button">Start</button>
-        <div id="model-machine" class="card-row" hidden>
-        <!-- RH: The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
-            <div id="webcam-container"></div>
-            <div class="col fill-width">
+        <div class="content-card">
+        <!-- RH: This content-card class adds visual separation between sections with a new background color and box shadow -->
+            <div class="col">
             <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
-                <p id="status" role="status" aria-live="polite"></p>
-                <div id="results-container" class="info-card" hidden>
-                    <h2 id="predicted-label"></h2>
-                    <div id="label-container"></div>
+                <p>We trained a model to differentiate pens and pencils using Google's Teachable Machine. Check it out for yourself!</p>
+                
+                <p class="aside-text">Please note that the model more easily identifies the objects when there is no human visible to the camera and when the background is plain.</p>
+            </div> 
+            <button id="start-button" type="button">Start</button>
+            <div id="model-machine" class="card-row" hidden>
+            <!-- RH: The card-row class enables us to list elements side-by-side. It also centers elements vertically in their "column." -->
+                <div id="webcam-container"></div>
+                <div class="col fill-width">
+                <!-- PH/RH: This col class uses the Flexible Box Layout Module. It makes centering children horizontally in a manner that is responsive to different screen sizes easier. The column flex-direction ensures that the children are listed vertically rather than horizontally. -->
+                    <p id="status" role="status" aria-live="polite"></p>
+                    <div id="results-container" class="info-card" hidden>
+                        <h2 id="predicted-label"></h2>
+                        <div id="label-container"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <hr>
 
         <div>
