@@ -1,4 +1,4 @@
-// Code is based on that which is provided by Teachable Machine
+// Code is based on that which is provided by Teachable Machine and made more robust with the help of AI
 // More API functions here:
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
